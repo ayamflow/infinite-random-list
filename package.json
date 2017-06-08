@@ -1,0 +1,41 @@
+{
+  "name": "infinite-random-list",
+  "version": "1.0.0",
+  "description": "An infinite list of shuffled elements",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "browserify test/index.js | tap-closer | smokestack | faucet",
+    "test-debug": "budo test/index.js --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayamflow/infinite-random-list.git"
+  },
+  "keywords": [
+    "infinite",
+    "random",
+    "shuffle",
+    "list",
+    "array"
+  ],
+  "author": "Florian Morel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayamflow/infinite-random-list/issues"
+  },
+  "homepage": "https://github.com/ayamflow/infinite-random-list#readme",
+  "dependencies": {
+    "array-shuffle": "^1.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "budo": "^10.0.3",
+    "faucet": "0.0.1",
+    "smokestack": "^3.4.1",
+    "tap-closer": "^1.0.0",
+    "underscore": "^1.8.3"
+  }
+}
