@@ -21,9 +21,9 @@ InfiniteRandomList.prototype.get = function() {
         var l = this.items.length - 1;
         // If first shuffled item is the same as the last one, push it further into the pile
         if (this.original.length > 1 && this.items[l] == this.lastItem) {
-            let offset = Math.max(0, Math.floor(this.original.length * 0.5));
-            let swapIndex = Math.floor(Math.random() * (this.original.length - offset));
-            let temp = this.items[swapIndex];
+            var offset = Math.max(0, Math.floor(this.original.length * 0.5));
+            var swapIndex = Math.floor(Math.random() * (this.original.length - offset));
+            var temp = this.items[swapIndex];
             this.items[swapIndex] = this.items[l];
             this.items[l] = temp;
         }
