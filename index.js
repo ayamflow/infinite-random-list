@@ -16,7 +16,7 @@ InfiniteRandomList.prototype.set = function(items) {
 InfiniteRandomList.prototype.get = function() {
     var item = this.items.pop();
 
-    if (!item) {
+    if (item == undefined) {
         this.items = shuffle(this.original.slice());
         var l = this.items.length - 1;
         // If first shuffled item is the same as the last one, push it further into the pile
